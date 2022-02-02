@@ -10,7 +10,7 @@
 
     <script>
         function getNews() {
-            fetch('https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2')
+        fetch('https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2',{headers: new Headers({"X-Requeested-With":"raphcrryptonews.com"})})
             .then(a =>a.json())
             .then(response => {
                 for(var i=0; i<response.articles.length; i++){
