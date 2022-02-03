@@ -11,10 +11,19 @@ body{
   color: rgb(182, 255, 47); 
   margin: 0;
 }
+.logo {
+  float: left; 
+  left: 30px; 
+  margin-top: -70px;
+}
 .brand {
   text-align: center;
-  margin-top: 80px;
-  /* font-size: 3em; */
+  margin-top: 150px;
+}
+
+.slogan {
+  display: inline-block;
+  text-align: center;
 }
 
 .grid {
@@ -24,30 +33,27 @@ body{
   margin-right: auto;
 }
 
-.navbar {
-  padding: 20px ;
-  background-color: Black;
-  justify-content: center;
-  width: 70%;
-  text-align: center;
-  margin: 20px auto ;
-}
+/* contact navigation */
 
-
-.navbar a{
-  text-decoration: none;
-  margin: 50px;
-  background-color: black;
-  color: white;
-  padding: 20px;
+.nav {
+  color: rgb(37, 52, 56);
   text-transform: uppercase;
-  border-radius: 3%;
+  margin: 20px;
+  text-align: right;
+  }
+  
+.nav  a {
+  margin: 20px;
+  font-weight: bold;
+  padding: 20px;
 }
+  
+  /* contact naviggation ends */
 
-.navbar a:hover {
+.nav a:hover {
   transition: 0.5s;
-  background-color: white;
-  color: rgb(41, 63, 65);
+  background-color: rgb(31, 59, 70);
+  color: rgb(164, 208, 212);
 }
 
 .whiteTexts {
@@ -123,12 +129,6 @@ html {
   background-color: #555;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-  }
-}
 
 /* About body styles ends */
 
@@ -192,20 +192,6 @@ a {
   text-decoration: none;
 }
 
-/* contact navigation */
-
-.contactNav {
-color: black;
-text-transform: uppercase;
-margin: 20px;
-text-align: right;
-}
-.contactNav  a {
-margin: 20px;
-font-weight: bold;
-}
-
-/* contact naviggation ends */
 /* form style */
 .form {
 background-image: url(pictures/raph3.jpg);
@@ -244,4 +230,29 @@ font-size: 1em;
   background-color: rgb(41, 48, 53);
   color: rgb(198, 209, 218);
   transition: 0.2;
+}
+
+/* responsiveness */
+
+@media screen and (max-width: 900px) {
+  .logo {
+    height: 90px;
+    width: 250px;
+    margin-left: -30px;
+  }
+  .brand {
+    float: left;
+    margin-top: 150px;
+  }
+
+  .nav {
+    display: none;
+    }
+
+    
+  
+  .column {
+    width: 100%;
+    display: block;
+  }
 }
