@@ -11,14 +11,26 @@ body{
   color: rgb(182, 255, 47); 
   margin: 0;
 }
+
+/* imported hamburger */
+
+
+/* imported hamburger ends*/
 .logo {
-  float: left; 
+  text-align: left; 
   left: 30px; 
-  margin-top: -70px;
+  display: flex;
+  /* margin-top: -200px; */
 }
 .brand {
-  text-align: center;
-  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 100px;
+}
+
+.openMenu {
+  display: none;
 }
 
 .slogan {
@@ -60,10 +72,10 @@ body{
   color: white;
 }
 
-.updates {
+/* .updates {
   text-align: center;
   margin-top: 100px;
-}
+} */
 
 /* about body styles starts */
 
@@ -239,20 +251,65 @@ font-size: 1em;
     height: 90px;
     width: 250px;
     margin-left: -30px;
-  }
-  .brand {
     float: left;
-    margin-top: 150px;
+    margin-top: -100px;
   }
 
-  .nav {
-    display: none;
-    }
+  /* imported hamburger */
 
-    
+  
+ .nav {
+  align-items: center;
+  display: none;
+  height: 100vh;   
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  flex-direction: column;
+  justify-content: center;
+  transition: top 1s ease;
+}
+
+.nav .closeMenu {
+  color: rgb(23, 104, 151);
+  background-color: rgba(93, 165, 84, 0.678);
+  display: block;
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 2em;
+}
+.openMenu {
+  color: rgb(23, 104, 151);
+  font-size: 2em;
+  font-weight: lighter;
+  cursor: pointer;
+  display: inline;
+  margin: -80px 30px 50px 30px;
+}
+
+.brand {
+  margin-top: 200px;
+}
+
+
+
+/* imported hhamburger ends */
+
   
   .column {
     width: 100%;
     display: block;
   }
+
+  /* news update on the new page */
+  .updates {
+    text-align: center;
+  }
+  /* .about-section{
+    margin-top: 00px;
+  } */
 }

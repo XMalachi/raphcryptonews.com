@@ -1,5 +1,5 @@
 /*Hamburger Animation*/
-const mainMenu = document.querySelector(`.mainMenu`);
+const nav = document.querySelector(`.nav`);
 const closeMenu = document.querySelector(`.closeMenu`);
 const openMenu = document.querySelector(`.openMenu`);
 // const openservice = document.querySelector(`.#`);
@@ -12,12 +12,12 @@ closeMenu.addEventListener(`click`,close);
 // opencontact.addEventListener(`click`,close);
 
 function show() {
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
+    nav.style.display = 'flex';
+    nav.style.top = '0';
 
 }
 function close() {
-    mainMenu.style.top = '-150%';
+    nav.style.top = '-150%';
 
 }
 
