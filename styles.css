@@ -155,9 +155,21 @@ html {
 
 }
 
+/* .container {
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.container > div {
+  height:100px;
+  flex:400px;
+  background:red;
+} */
+
 .footerbrand {
   display: flex;
-  justify-content: space-between;
+  flex-wrap:wrap;
+  gap:10px;
 }
 
 .footerlinks > a {
@@ -168,6 +180,7 @@ html {
   text-transform: uppercase;
   font-size: 2em;
   display: block;
+  flex:400px;
 }
 
 .footerlinks > a:hover {
@@ -177,6 +190,7 @@ html {
 
 .footercontacts {
   padding: 20px 20px auto 0;
+  flex:400px;
 }
 
 .footercontacts > i  {
