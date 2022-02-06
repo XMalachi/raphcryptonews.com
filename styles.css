@@ -141,10 +141,17 @@ html {
   background-color: #555;
 }
 
+/* directions styles */
+.directions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2em;
+}
+
 
 /* About body styles ends */
 
-.footer {
+.footer { 
   font-size: 0.5em;
   background-image: url(pictures/raph2.jpg);
   background-repeat: no-repeat;
@@ -155,47 +162,61 @@ html {
 
 }
 
-/* .container {
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-.container > div {
-  height:100px;
-  flex:400px;
-  background:red;
-} */
 
 .footerbrand {
-  display: flex;
+  display: inline-flex;
   flex-wrap:wrap;
   gap:10px;
+  width: 100%;
+ 
 }
+
+figure {
+  width:  50%;
+  font-size: 1.5em;
+ }
+ 
+
+figure > img {
+  height: 40%;
+  
+}
+
 
 .footerlinks > a {
   text-decoration: none;
-  margin: 10px 200px 0 0;
+  margin: 10px 0;
   color: white;
   padding: 6px;
   text-transform: uppercase;
   font-size: 2em;
   display: block;
-  flex:400px;
+  /* flex:400px; */
 }
 
 .footerlinks > a:hover {
   background-color: lightgreen;
   color: rgb(23, 83, 247);
+
 }
 
 .footercontacts {
-  padding: 20px 20px auto 0;
-  flex:400px;
+  /* padding: 20px 20px auto 0; */
+  /* flex:400px; */
 }
 
-.footercontacts > i  {
-  font-size: 5em;
-  margin: 10px;
+.footercontacts > a  {
+  font-size: 3vh;
+  margin: 4px;
+}
+
+.fab:hover {
+  font-size: 4vh;
+  transition: 0.5s;
+}
+.far:hover {
+  transition: 0.5s;
+  font-size: 4vh;
 }
 
 .fa-twitter-square {
@@ -227,17 +248,18 @@ background-repeat: no-repeat;
 background-image: linear-gradient(from right, grey);
 background-attachment: fixed;
 padding: 30px;
+
 }
 form {
 background-color: rgb(199, 194, 194);
 border-radius: 20px;
 display: grid;
 text-align: center;
-margin: 10px 30px;
+margin: 10px;
 height: 600px;
 width: 50%;
 font-size: 1em;
-padding: 30px 50px;
+padding: 30px;
 font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 form > input, textarea {
@@ -269,7 +291,7 @@ font-size: 1em;
     margin-top: -100px;
   }
 
-  /* imported hamburger */
+  /* hamburger */
 
   
  .nav {
@@ -311,8 +333,17 @@ font-size: 1em;
 
 
 
-/* imported hhamburger ends */
+/* hamburger ends */
 
+/* forms */
+
+  .form {
+  padding: 30px;
+  }
+
+  form {
+    width: 100%;
+  }
   
   .column {
     width: 100%;
@@ -323,7 +354,15 @@ font-size: 1em;
   .updates {
     text-align: center;
   }
-  /* .about-section{
-    margin-top: 00px;
-  } */
+ 
+  .directions {
+    font-size: 1.3em;
+  } 
+  
+
+  figure > img {
+    height: 30%;
+    margin: -10px 0 0 -60px;
+  }
+  
 }

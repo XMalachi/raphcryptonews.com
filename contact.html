@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fa icons/css/all.min.css">
 
-    <script>
+    <!-- <script>
         function getNews() {
             fetch('https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2')
             .then(a =>a.json())
@@ -31,7 +31,7 @@
             Page  = GetPageOfItems(Page=>cursor);
 //process the data again
             end
-    </script>
+    </script> -->
     
  
 </head>
@@ -69,7 +69,7 @@
 <!-- form -->
     <div class="form">
         <form action="/action_page.php">
-            <label for="options" style="font-size: 2em; font-weight: bolder;">Contact Us</label>
+            <label for="options" style="font-size: 2em; font-weight: bolder;">Contact Us <br> To get Newsletters and Join our community</label>
             <input type="email" placeholder="Email" maxlength="50" width="" name="name">
             <input type="tel" placeholder="Phone" name="phone" id="phone">
         
@@ -79,8 +79,10 @@
                 <option value="Market">Affiliate Marketing</option>
                 <option value="getNews">Get Crypto News Updates</option>
                 <option value="AMA">AMA</option>
-                <input type="submit" value="Submit" class="submit">
-            </select>      
+                <option value="getNews">Others</option>
+                
+            </select>     
+            <input type="submit" value="Submit" class="submit"> 
         </form>
     </div>
 <!-- form ends -->
@@ -91,16 +93,20 @@
 <br>
     <br>
     <br>
-    <a href="news.html" class="uppercase" style="font-size: 2em;">Go to news updates&RightArrow;</a>
-    <a href="#top" class="uppercase" style="font-size: 2em; float: right;">Back to top&UpArrow;</a>
-<!-- Footer starts -->
+    <div class="directions">
+        <a href="news.html" class="uppercase">Go to news updates&RightArrow;</a>
+        <a href="#top" class="uppercase">Back to top&UpArrow;</a>
+    </div>
+    
+    
+    <!-- Footer starts -->
 
     <footer class="footer">
       
         <div class="footerbrand">
             <figure>
-                <img height="150px" width="450px" src="pictures/raphlogo.png" alt="raph's logo">
-                <figcaption style="text-align: center; font-size: 2em;">GET THE BEST CRYPTOCURRENCY DEALS AND UPDATES</figcaption>
+                <img src="pictures/raphlogo.png" alt="raph's logo">
+                <figcaption>GET THE BEST CRYPTOCURRENCY DEALS AND UPDATES</figcaption>
             </figure>
             
             <!-- Navigation menu -->
@@ -111,15 +117,11 @@
                 <a href="contact.html">Contact</a>
                
                 <span class="footercontacts">
-                    <i class="fab fa-twitter-square"></i>
-                    <i class="fab fa-facebook-square"></i>
-                    <i class="fab fa-instagram-square"></i>
-                    <i class="fab fa-linkedin"></i>
-
-                    <a href="https:/t.me?raphcryptonews"><i style="font-size: 5em;" class="far fa-paper-plane"></i></a>
-                <a href=""></a>
-                
-                
+                    <a href="https:/t.me?raphcryptonews"><i class="fab fa-twitter-square"></i></a>
+                    <a href="https:/t.me?raphcryptonews"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https:/t.me?raphcryptonews"><i class="fab fa-instagram-square"></i></a>
+                    <a href="https:/t.me?raphcryptonews"><i class="fab fa-linkedin"></i></a>
+                    <a href="https:/t.me?raphcryptonews"><i class="far fa-paper-plane"></i></a>
                 </span>
             </span>
             <!-- Navigation menu Ends -->
