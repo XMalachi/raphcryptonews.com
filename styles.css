@@ -152,7 +152,7 @@ html {
 /* About body styles ends */
 
 .footer { 
-  font-size: 0.5em;
+  font-size: 0.4em;
   background-image: url(pictures/raph2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -164,11 +164,48 @@ html {
 
 
 .footerbrand {
-  display: inline-flex;
-  flex-wrap:wrap;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap:  no-wrap;
   gap:10px;
   width: 100%;
  
+}
+
+@media screen and (max-width: 450px) {
+  .footer { 
+    font-size: 0.3em;
+  } 
+
+  .footerbrand {
+    gap: 10px;
+    width: 50%;
+   
+  }
+
+  figure {
+    width:  30%;
+    font-size: 1em;
+   }
+
+   figure > img {
+    height: 20%;
+    
+  }
+
+  .footerlinks {
+    padding: 5px ;
+    margin: 3px 0px 0px 50px;
+  }
+  .footerlinks > a {
+    margin: 6px 0;
+    padding: 5px ;
+    font-size: 1em;
+    display: block;
+    flex:400px;
+  }
+  
+
 }
 
 figure {
