@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="fa icons/css/all.min.css">
 
     <script>
+        {% comment %} curl -X GET "https://contentapi.cision.com/api/v1.0/releases?mod_startdate=20211001T102000-0000&language=en&industry=Crytocurrency&company=coinbase&mm_type=photo%7Cvideo%7Cpdf&keyword=products%20position&keyword_not=communication%20science&keyword_or=crypto&keyword_fields=company%7Ctitle%7Csub_title%7Ccontact&from=21&size=20&fields=multimedia%7Csummary%7Ccompany%7Cfeed%7C" -H "accept: application/json" -H "X-Client: raphcryptonewsapi" {% endcomment %}
+
         function getNews() {
-            fetch('https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2')
+            fetch("https://contentapi.cision.com/api/v1.0/releases?mod_startdate=20200801T102000-0000&mod_enddate=20200802T102000-0000&language=en%7Cfr&subject=AWD%7CSVY&industry=FIN%7CHEA&geography=USA%7C%21ARK&ticker=NYSE%3ARHI%7CToronto%3ARY%7C%21NYSE%3AFICO&ticker.exchange=NYSE%7CToronto&dateline=ottawa%7Cnew%20york&company=Microsoft&mm_type=photo%7Cvideo%7Cpdf&keyword=products%20position&keyword_not=communication%20science&keyword_or=city%20wood&keyword_fields=company%7Ctitle&phrase=groundbreaking%20partnership%7Cschool%20pride&phrase_not=closing%20conditions%7CMarketing%20Manager&phrase_or=closing%20conditions%7Ctechnology%20entrepreneurs&from=0&size=20&fields=title%7Cindustry%7Crelease_id")
+            {% comment %} 'https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2' {% endcomment %}
             .then(a =>a.json())
             .then(response => {
                 for(var i=0; i<response.articles.length; i++){
@@ -20,7 +23,6 @@
                         + response.articles[i].source.name+"<br>" +response.articles[i].description+" <a style= 'text-align:center;' href='"
                         +response.articles[i].url+"'> "+response.articles[i].url+" </a></span></div>";
                     }
-       
             })
             
             
