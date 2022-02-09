@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fa icons/css/all.min.css">
 
-    <script>
-        {% comment %} curl -X GET "https://contentapi.cision.com/api/v1.0/releases?mod_startdate=20211001T102000-0000&language=en&industry=Crytocurrency&company=coinbase&mm_type=photo%7Cvideo%7Cpdf&keyword=products%20position&keyword_not=communication%20science&keyword_or=crypto&keyword_fields=company%7Ctitle%7Csub_title%7Ccontact&from=21&size=20&fields=multimedia%7Csummary%7Ccompany%7Cfeed%7C" -H "accept: application/json" -H "X-Client: raphcryptonewsapi" {% endcomment %}
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          background-color: rgb(227, 233, 236);
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          text-align: center;
+          padding: 20px 0;
+          font-size: 1em;
+          background-color: white;
 
-        function getNews() {
-            fetch("https://contentapi.cision.com/api/v1.0/releases?mod_startdate=20200801T102000-0000&mod_enddate=20200802T102000-0000&language=en%7Cfr&subject=AWD%7CSVY&industry=FIN%7CHEA&geography=USA%7C%21ARK&ticker=NYSE%3ARHI%7CToronto%3ARY%7C%21NYSE%3AFICO&ticker.exchange=NYSE%7CToronto&dateline=ottawa%7Cnew%20york&company=Microsoft&mm_type=photo%7Cvideo%7Cpdf&keyword=products%20position&keyword_not=communication%20science&keyword_or=city%20wood&keyword_fields=company%7Ctitle&phrase=groundbreaking%20partnership%7Cschool%20pride&phrase_not=closing%20conditions%7CMarketing%20Manager&phrase_or=closing%20conditions%7Ctechnology%20entrepreneurs&from=0&size=20&fields=title%7Cindustry%7Crelease_id")
-            {% comment %} 'https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2' {% endcomment %}
-            .then(a =>a.json())
-            .then(response => {
-                for(var i=0; i<response.articles.length; i++){
-                    document.getElementById("output").innerHTML += 
-                    "<div style='padding-top:150px; overflow:hidden; width:100%; display: flex; flex-wrap:wrap; gap:10px; margin:0;'><img style=' height:5%; width:50vw' src='"
-                        +response.articles[i].urlToImage+"'> <span style= 'background-color:rgba(231, 231, 231, 0.575); padding:auto; flex:400px;'> <h1>"+response.articles[i].title+"</h1>"
-                        + response.articles[i].source.name+"<br>" +response.articles[i].description+" <a style= 'text-align:center;' href='"
-                        +response.articles[i].url+"'> "+response.articles[i].url+" </a></span></div>";
-                    }
-            })
-            
-            
+        }
+        .grid-container img {
+            width:80%;
         }
 
-        Page = GetPageOfItems();
-//process the data from the page, or add it to a larger array, etc.
-            while( Page=>cursor )
-            Page  = GetPageOfItems(Page=>cursor);
-//process the data again
-            end
-    </script>
+        @media screen and (max-width: 900px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+              }
+        }
+    </style>
+    
     
  
 </head>
@@ -47,8 +49,9 @@
         currency="USD" theme="dark" transparent="false" show-symbol-logo="true" class="marquee whiteTexts">
     </div>
 <!-- Coin price trackers Carousel Ends -->
-    
-
+    <marquee direction="left" height="50px" width="100%" bgcolor="black">
+        Raph Crypto News Ad space.<br>Contact us FOR AMA, sponsorship, promotions and any good deals on crypto.
+    </marquee>
 <!-- Brand -->
     <div class="brand" id="top" >
         <img class="logo" height="150px" width="450px"  src="pictures/raphlogo.png" alt="raph's logo">
@@ -102,7 +105,7 @@
             data-volume="true" data-statsticker="true" data-stats="USD">
         </div>
 
-        <div class="coinmarketcap-currency-widget" data-currencyid=2010" data-base="USD" 
+        <div class="coinmarketcap-currency-widget" data-currencyid="2010" data-base="USD" 
             data-secondary="BTC" data-ticker="true" data-rank="true" data-marketcap="true" 
             data-volume="true" data-statsticker="true" data-stats="USD">
         </div>
@@ -149,11 +152,63 @@
     </div>
 
 <!-- news articles -->
-    <h1 class="brand">TOP STORIES COMING SOON</h1>
-    <div  id="output">
+<h1 class="uppercase" style="text-align: center;" >CRYPTO NEWS UPDATES.</h1>
 
+<div class="grid-container">
+  <div>
 
+    <div>
+        <img src="pictures/news4.jpg" alt="raph's logo">    
+        <h1>
+            DOJ arrests two for allegedly laundering $4.5B from crypto hack (updated)
+        </h1>
+            Feb. 08, 2022 12:10 PM ETBTC-USDBy: Liz Kiesche, SA News Editor28 Comments
     </div>
+    <img src="pictures/news5.jpg" alt="raph's logo" >  
+    <h1>
+        U.S. Treasury's Nellie Liang says tech firms should not issue stablecoins.</h1>
+        Treasury Undersecretary for Domestic Finance Nellie Liang on Tuesday said technology firms should not issue stablecoins, or digital currencies 
+        that are pegged to sovereign currencies.
+        "We believe stablecoins as a payments instrument should not be issued by a technology firm," she told lawmakers during a virtual hearing regarding the President's 
+        Working Group on Financial Markets' 
+        report on stablecoins. This comes shortly after Meta Platforms' (NASDAQ:FB) Diem, a blockchain-based 
+        stablecoin payment system, sold its assets to crypto bank Silvergate Capital (NYSE:SI) for $182M at the end of January.
+        
+        <p class="smallcaps">Feb. 08, 2022 11:13 AM ETTether USD (USDT-USD), USDC-USDFB, SIBy: Max Gottlich, SA News Editor9 Comments</p>
+  </div>
+  
+  <div>
+    <img src="pictures/raph3.jpg" alt="raph's logo">    
+    <h1>
+        Cryptocurrency lobbying expenditure doubles in 2021; Robinhood spends the most
+    </h1>
+  </div>
+  
+    <div>
+        <a href="https://seekingalpha.com/news/3797649-first-year-crypto-goes-all-in-on-super-bowl-advertising"><img src="pictures/news2.jpg" alt="raph's logo">    
+        <h1>
+            First year crypto goes all-in on Super Bowl advertising
+        </h1>
+            Feb. 09, 2022 4:26 AM ETCOIN, BUDBy: Yoel Minkoff, SA News Editor2 Comments</a>
+    </div>  
+
+    <div>
+        <a href="https://seekingalpha.com/news/3797449-paypal-forms-cryptocurrency-advisory-council-to-create-digital-financial-system">
+        <img src="pictures/news3.jpg" alt="raph's logo">    
+        <h1>
+            PayPal forms cryptocurrency advisory council to create digital financial system
+        </h1>
+        Feb. 08, 2022 3:11 PM ETPayPal Holdings, Inc. (PYPL)TWTRBy: Max Gottlich, SA News Editor20 Comments</a>
+    </div>
+
+    <div>
+        <img src="pictures/news4.jpg" alt="raph's logo">    
+        <h1>
+            DOJ arrests two for allegedly laundering $4.5B from crypto hack (updated)
+        </h1>
+            Feb. 08, 2022 12:10 PM ETBTC-USDBy: Liz Kiesche, SA News Editor28 Comments
+    </div>
+</div>
 <!-- news articles ends -->
 
 <br>

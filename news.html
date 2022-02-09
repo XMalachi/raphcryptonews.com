@@ -8,30 +8,34 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fa icons/css/all.min.css">
  
-    <script>
-        function getNews() {
-            fetch('https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2')
-            .then(a =>a.json())
-            .then(response => {
-                for(var i=0; i<response.articles.length; i++){
-                    document.getElementById("output").innerHTML += 
-                    "<div style='padding-top:150px; overflow:hidden; width:100%; display: flex; flex-wrap:wrap; gap:10px; margin:0;'><img style=' height:5%; width:50vw' src='"
-                        +response.articles[i].urlToImage+"'> <span style= 'background-color:rgba(231, 231, 231, 0.575); padding:auto; flex:400px;'> <h1>"+response.articles[i].title+"</h1>"
-                        + response.articles[i].source.name+"<br>" +response.articles[i].description+" <a style= 'text-align:center;' href='"
-                        +response.articles[i].url+"'> "+response.articles[i].url+" </a></span></div>";
-                    }
-       
-            })
-            
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+          background-color: rgb(227, 233, 236);
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          text-align: center;
+          padding: 20px 0;
+          font-size: 1em;
+          background-color: white;
+
+        }
+        .grid-container img {
+            width:80%;
         }
 
-        Page = GetPageOfItems();
-//process the data from the page, or add it to a larger array, etc.
-            while( Page=>cursor )
-            Page  = GetPageOfItems(Page=>cursor);
-//process the data again
-            end
-    </script>
+        @media screen and (max-width: 900px) {
+            .grid-container {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 10px;
+              }
+        }
+    </style>
     
 </head>
 
@@ -41,6 +45,11 @@
     <div id="coinmarketcap-widget-marquee"
     coins="1,1027,825,1839,3408,2010,52,74,4687" 
     currency="USD" theme="dark" transparent="false" show-symbol-logo="true" class="marquee whiteTexts"></div>
+
+    <marquee direction="left" height="50px" width="100%" bgcolor="black">
+        Raph Crypto News Ad space.<br>Contact us FOR AMA, sponsorship, promotions and any good deals on crypto.
+    </marquee>
+    
 <!-- Coin price trackers Carousel Ends  -->
 
 
@@ -79,9 +88,120 @@
 <!-- Coin Price Block Ends -->    
 
 
-<h1 class="uppercase slogan">
-    CRYPTO NEWS UPDATES.
-</h1>
+
+    
+<h1 class="uppercase" style="text-align: center;" >CRYPTO NEWS UPDATES.</h1>
+
+<div class="grid-container">
+  <div>
+    <img src="pictures/news5.jpg" alt="raph's logo" >  
+    <h1>
+        U.S. Treasury's Nellie Liang says tech firms should not issue stablecoins.</h1>
+        Treasury Undersecretary for Domestic Finance Nellie Liang on Tuesday said technology firms should not issue stablecoins, or digital currencies 
+        that are pegged to sovereign currencies.
+        "We believe stablecoins as a payments instrument should not be issued by a technology firm," she told lawmakers during a virtual hearing regarding the President's 
+        Working Group on Financial Markets' 
+        report on stablecoins. This comes shortly after Meta Platforms' (NASDAQ:FB) Diem, a blockchain-based 
+        stablecoin payment system, sold its assets to crypto bank Silvergate Capital (NYSE:SI) for $182M at the end of January.
+        
+        <p class="smallcaps">Feb. 08, 2022 11:13 AM ETTether USD (USDT-USD), USDC-USDFB, SIBy: Max Gottlich, SA News Editor9 Comments</p>
+  </div>
+  
+  <div>
+    <img src="pictures/raph3.jpg" alt="raph's logo">    
+    <h1>
+        Cryptocurrency lobbying expenditure doubles in 2021; Robinhood spends the most
+    </h1>
+  </div>
+  
+    <div>
+        <a href="https://seekingalpha.com/news/3797649-first-year-crypto-goes-all-in-on-super-bowl-advertising"><img src="pictures/news2.jpg" alt="raph's logo">    
+        <h1>
+            First year crypto goes all-in on Super Bowl advertising
+        </h1>
+            Feb. 09, 2022 4:26 AM ETCOIN, BUDBy: Yoel Minkoff, SA News Editor2 Comments</a>
+    </div>  
+
+    <div>
+        <a href="https://seekingalpha.com/news/3797449-paypal-forms-cryptocurrency-advisory-council-to-create-digital-financial-system">
+        <img src="pictures/news3.jpg" alt="raph's logo">    
+        <h1>
+            PayPal forms cryptocurrency advisory council to create digital financial system
+        </h1>
+        Feb. 08, 2022 3:11 PM ETPayPal Holdings, Inc. (PYPL)TWTRBy: Max Gottlich, SA News Editor20 Comments</a>
+    </div>
+
+    <div>
+        <img src="pictures/news4.jpg" alt="raph's logo">    
+        <h1>
+            DOJ arrests two for allegedly laundering $4.5B from crypto hack (updated)
+        </h1>
+            Feb. 08, 2022 12:10 PM ETBTC-USDBy: Liz Kiesche, SA News Editor28 Comments
+    </div>
+
+    <div>
+        <img src="pictures/news6.jpg" alt="raph's logo">    
+        <h1>
+            46.7 Million SHIB Burned in Over 24 Hours, While Burn Pot of This Company Rises to 191 Million Tokens</h1> 
+            Another large portion of Shiba Inu has been burnt, while an even bigger amount is going to be destroyed in four day
+         
+    </div>
+    
+    <div>
+        <img src="pictures/news7.jpg" alt="raph's logo">
+        <h1>
+            The next NFT gaming revolution: Edensol’s Solana-based Metaverse
+        </h1>
+        Non-Fungible Tokens (NFTs) have become the go-to killer application for the gaming sector. The reason is simple: NFTs are a form of an asset whose...
+
+    </div>
+
+    <div>
+        <h1>
+            New Alfa Romeo SUV Will Come With NFT Service Record
+            Alfa Romeo claims its Tonale SUV is the first car to be sold with an NFT that tracks the vehicle's service history
+        </h1>
+        <img src="pictures/news8.jpg" alt="raph's logo">
+    </div>
+
+    <div>
+        <h1>
+            Ravendex: Cardano startup set for permissionless staking platform release
+        </h1>
+        <img src="pictures/news9.jpg" alt="raph's logo">
+    </div>
+
+    <div>
+        <h1>
+            Bitcoin mining infrastructure firm Compute North raises $385 million in equity and debt funding
+        </h1>
+            Compute North, a bitcoin mining infrastructure firm, has raised $385 million in equity and debt funding.
+
+        <img src="pictures/news10.jpg" alt="raph's logo">
+    </div>
+
+    <div>
+        <h1>
+            Wells Fargo Report Argues It&apos;s Not 'Too Late to Invest' in Crypto
+            Banking giant Wells Fargo said it&apos;s not too late to buy cryptocurrencies like Bitcoin, but investors still need to tread with caution.
+        </h1>
+        <img src="pictures/news11.jpg" alt="raph's logo">
+    </div>
+
+    <div>
+        <h1>
+            US Officials Seize $3.6B in Bitcoin From 2016 Bitfinex Hack
+            Nearly 120,000 BTC was stolen in the hack.
+        </h1>
+            ByDanny NelsonNikhilesh De
+            Feb 8, 2022 at 5:46 p.m.
+        
+        <img src="pictures/news12.jpg" alt="raph's logo">
+    </div>
+
+
+    
+</div>
 
 
 <!-- news articles -->
@@ -94,7 +214,7 @@
     <br>
     <br>
     <div class="directions">
-        <a href="news.html" class="uppercase">Go to news updates&RightArrow;</a>
+        <a href="https://seekingalpha.com/news" class="uppercase">More News Updates&RightArrow;</a>
         <a href="#top" class="uppercase">Back to top&UpArrow;</a>
     </div>
     
