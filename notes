@@ -1,0 +1,18 @@
+<!-- form -->
+    <div class="form">
+        <form action="/action_page.php">
+            <label for="options" style="font-size: 2em; font-weight: bolder;">Contact Us <br> To get Newsletters and Join our community</label>
+            <input type="email" placeholder="Email" maxlength="50" width="" name="name">
+            <input type="tel" placeholder="Phone" name="phone" id="phone">
+        
+            <h1 style="font-size: 1em; margin-top: 60px;">How would You Like to work with us?:</h1>
+            <select id="offers" name="offers" style="font-size: 1em; height: 30px; margin-top: 0;" >
+                <option value="Ad">Advertisement</option>
+                <option value="Market">Affiliate Marketing</option>
+                <option value="getNews">Get Crypto News Updates</option>
+                <option value="AMA">AMA</option>
+                <option value="getNews">Others</option>
+                
+            </select>     
+            <input type="submit" value="Submit" class="submit"> 
+        </form>

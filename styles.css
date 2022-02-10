@@ -307,50 +307,11 @@ a {
   text-decoration: none;
 }
 
-/* form style */
-.form {
-background-image: url(pictures/raph3.jpg);
-background-position: left;
-background-size: cover;
-background-repeat: no-repeat;
-background-image: linear-gradient(from right, grey);
-background-attachment: fixed;
-padding: 30px;
-height: 900px;
-
-}
-form {
-background-color: rgb(199, 194, 194);
-border-radius: 20px;
-/* display: grid; */
-text-align: center;
-margin: 10px;
-width: 50%;
-font-size: 1em;
-padding: 30px;
-}
-form > input, textarea {
-padding: 30px;
-margin-top: 20px;
-border: none;
-border-radius: 10px;
-font-size: 1em;
-}
-.submit {
-  font-size: 1.5em; height: 10px; margin-top: 0; margin: 0 100px ;
-  padding-top: 10px;
-  font-weight: bold;
-}
-.submit:hover  {
-  background-color: rgb(41, 48, 53);
-  color: rgb(198, 209, 218);
-  transition: 0.2;
-}
-
 
 /* responsiveness */
 
 @media screen and (max-width: 900px) {
+  
   .logo {
     height: 90px;
     width: 250px;

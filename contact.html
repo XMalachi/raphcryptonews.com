@@ -7,35 +7,90 @@
     <title>Raph Crypto News</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="fa icons/css/all.min.css">
-
-    <!-- <script>
-        function getNews() {
-            fetch('https://newsapi.org/v2/everything?q=crypto&pagenumber=3&pagesize=20$&apiKey=a1adaf611dad4812b494d451f5e3d0a2')
-            .then(a =>a.json())
-            .then(response => {
-                for(var i=0; i<response.articles.length; i++){
-                    document.getElementById("output").innerHTML += 
-                    "<div style='padding-top:150px; overflow:hidden; width:100%; height:500px; display: flex;justify-content: center; margin:0;'><img style=' height:500px;' src='"
-                        +response.articles[i].urlToImage+"'> <span style= 'background-color:rgba(231, 231, 231, 0.575); padding:50px;'> <h1>"+response.articles[i].title+"</h1>"
-                        + response.articles[i].source.name+"<br>" +response.articles[i].description+" <a style= 'text-align:center;' href='"
-                        +response.articles[i].url+"'> "+response.articles[i].url+" </a></span></div>";
-                    }
+    <style>
        
-            })
-            
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Style inputs */
+        input[type=text], select, textarea {
+          width: 100%;
+          padding: 12px;
+          border: 1px solid #ccc;
+          margin-top: 6px;
+          margin-bottom: 16px;
+          resize: vertical;
+        }
+        input[type=tel]{
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical;
+          }
+        
+        input[type=submit] {
+          background-color: #04AA6D;
+          color: white;
+          padding: 12px 20px;
+          border: none;
+          cursor: pointer;
+        }
+        
+        input[type=submit]:hover {
+          background-color: #45a049;
+        }
+        
+        /* Style the container/contact section */
+        .container {
+          border-radius: 5px;
+          background-color: #f2f2f2;
+          padding: 10px;
+        }
+        
+        /* Create two columns that float next to eachother */
+        .column {
+          float: left;
+          width: 50%;
+          margin-top: 6px;
+          padding: 20px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
         }
 
-        Page = GetPageOfItems();
-//process the data from the page, or add it to a larger array, etc.
-            while( Page=>cursor )
-            Page  = GetPageOfItems(Page=>cursor);
-//process the data again
-            end
-    </script> -->
-    
- 
+        .contacttop {
+            background-image: linear-gradient(to right,black,black, grey  ,grey);
+            padding: 20px;
+            color: whitesmoke;
+            
+          }
+          
+          .contacttop:hover {
+            background-image: linear-gradient(to right,black,black, grey);
+            padding: 20px;
+            color: white;
+            transition: 0.5s;
+          }
+        
+        /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column, input[type=submit] {
+            width: 100%;
+            margin-top: 0;
+          }
+        }
+        </style>
+   
 </head>
-<body onload="getNews()">
+<body>
    
 <!-- Coin price trackers Carousel  -->
 
@@ -44,7 +99,7 @@
         currency="USD" theme="dark" transparent="false" show-symbol-logo="true" class="marquee whiteTexts">
     </div>
 
-    <marquee direction="left" height="70px" width="100%" bgcolor="black">
+    <marquee direction="left" height="50px" width="100%" bgcolor="black">
         Raph Crypto News Ad space.<br>Contact us FOR AMA, sponsorship, promotions and any good deals on crypto.
     </marquee>
     
@@ -71,26 +126,56 @@
         <!-- Navigation menu Ends -->
     </div>
 
-<!-- form -->
-    <div class="form">
-        <form action="/action_page.php">
-            <label for="options" style="font-size: 2em; font-weight: bolder;">Contact Us <br> To get Newsletters and Join our community</label>
-            <input type="email" placeholder="Email" maxlength="50" width="" name="name">
-            <input type="tel" placeholder="Phone" name="phone" id="phone">
+    <div class="contacttop">
+        <p>
+            <h2>We offer Opportunities!!!</h2>
+            <!-- <img src="pictures/raph10.jpg" style="width: 100%;" alt=""> -->
+        </p>
+        <p>
+            Contact Us Now to join our telegram groups, for crypto ads placements, staying updated <br>
+            on crypto dealings all over the world.<br><br> Get in touch with our large communities of crypto traders and Understand basic technical<br> 
+            analysis indicators (MAs, RSI, Bollinger Bands, etc).
+            Learn how to trade with proper risk management,<br> following the 1% risk rule
+        </p>
         
-            <h1 style="font-size: 1em; margin-top: 60px;">How would You Like to work with us?:</h1>
-            <select id="offers" name="offers" style="font-size: 1em; height: 30px; margin-top: 0;" >
-                <option value="Ad">Advertisement</option>
-                <option value="Market">Affiliate Marketing</option>
-                <option value="getNews">Get Crypto News Updates</option>
-                <option value="AMA">AMA</option>
-                <option value="getNews">Others</option>
-                
-            </select>     
-            <input type="submit" value="Submit" class="submit"> 
-        </form>
     </div>
-<!-- form ends -->
+
+    <div class="container">
+      <div style="text-align:center">
+        <h2>Contact Us</h2>
+        <p>Your request would be sent to all our receivers, and you&apos;ll be given a feedback within hours.</p>
+      </div>
+      <div class="row">
+        <div class="column">
+            <img src="pictures/raph6.jpg" style="width:100%">
+            <img src="pictures/raph9.jpeg" style="width:100%">
+        </div>
+        <div class="column">
+          <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="lname" name="phone" placeholder="Your Phone Number..">
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="dubai">Dubai</option>
+                <option value="india">India</option>
+                <option value="nigeria">Nigeria</option>
+                <option value="uk">Uk</option>
+                <option value="usa">USA</option>
+                <option value="others">Others</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+    </div>
 
 
     
@@ -147,4 +232,10 @@
 <!-- Script tags for all api widgets Ends -->
 </html>
 
+
+
+
+    
+    
+    
 
