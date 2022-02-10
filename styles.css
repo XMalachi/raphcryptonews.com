@@ -55,6 +55,7 @@ marquee {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: -30px;
 }
 
 /* contact navigation */
