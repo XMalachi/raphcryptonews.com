@@ -50,11 +50,7 @@ marquee {
 }
 
 .grid {
-  width: 70%;
-  display: block;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
 
 }
 
