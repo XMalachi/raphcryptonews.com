@@ -1,6 +1,6 @@
 body{
-  font-family: 'noto-sans', sans-serif;
-  font-weight: 400px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 200px;
 }
 .marquee {
   overflow: hidden;
@@ -47,6 +47,7 @@ marquee {
 .slogan {
   display: inline-block;
   text-align: center;
+  font-size: 1em;
 }
 
 .grid {
@@ -157,11 +158,21 @@ html {
   font-size: 2em;
 }
 
+.social-icons span {
+  display: flex;
+  justify-content: space-between;
+}
+#project a {
+  background-color: rgb(115, 139, 204);
+  color: whitesmoke;
+}
 
-/* About body styles ends */
-
- 
-
+#project a:hover {
+  background-image: linear-gradient( white 80%, rgb(115, 139, 204),white);
+  color: rgb(115, 139, 204);
+  transition: 0.5s;
+  margin-bottom: 5px;
+}
 @media screen and (max-width: 450px) {
  
 
@@ -222,14 +233,7 @@ a {
   cursor: pointer;
   font-size: 2em;
 }
-.openMenu {
-  color: rgb(23, 104, 151);
-  font-size: 2em;
-  font-weight: lighter;
-  cursor: pointer;
-  display: inline;
-  margin: -80px 30px 50px 30px;
-}
+
 
 .brand {
   margin-top: 200px;
@@ -437,3 +441,14 @@ a {
   }
 }
 /* footer styles end */
+
+@media screen and (max-width: 1000px) {
+  .openMenu {
+    color: rgb(23, 104, 151);
+    font-size: 2em;
+    font-weight: lighter;
+    cursor: pointer;
+    display: inline;
+    margin: -80px 30px 50px 30px;
+  }
+}
