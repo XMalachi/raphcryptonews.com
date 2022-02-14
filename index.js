@@ -21,3 +21,5 @@ function close() {
 
 }
 
+{/* <script src="https://widgets.coingecko.com/coingecko-coin-market-ticker-list-widget.js"></script>
+<coingecko-coin-market-ticker-list-widget  coin-id="bitcoin" currency="usd" locale="en"></coingecko-coin-market-ticker-list-widget> */}

@@ -173,6 +173,21 @@ html {
   transition: 0.5s;
   margin-bottom: 5px;
 }
+.projects {
+  color: rgb(115, 139, 204);
+}
+.listedProjects {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  text-align: left;
+  font-weight: 700;
+}
+.marketTickers {
+  font-size: 1.4em;
+  margin-top: 10px;
+  text-align: left;
+  font-weight: 700;
+}
 @media screen and (max-width: 450px) {
  
 

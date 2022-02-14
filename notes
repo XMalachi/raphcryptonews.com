@@ -65,3 +65,23 @@
 .fa-paper-plane{
   color: rgb(208, 241, 154);
 }
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
+
+
+<script>
+  curl -X 'GET' 
+'https://api.coingecko.com/api/v3/coins/bitcoin/tickers?exchange_ids=exchange_ids&include_exchange_logo=include_exchange_logo&page=20&depth=true' \
+-H 'accept: application/json'
+</script>
