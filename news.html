@@ -10,31 +10,45 @@
  
     <style>
         .grid-container {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          grid-gap: 10px;
-          background-color: rgb(227, 233, 236);
-          padding: 10px;
-        }
-        
-        .grid-container > div {
-          text-align: center;
-          padding: 20px 0;
-          font-size: 1em;
-          background-color: white;
-
-        }
-        .grid-container img {
-            width:80%;
-        }
-
-        @media screen and (max-width: 900px) {
-            .grid-container {
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-gap: 10px;
-              }
-        }
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            padding: 10px;
+          }
+          
+          .grid-container > div {
+            padding: 20px 0;
+            font-size: 1em;
+            text-align: center;
+          
+          }
+          .grid-container > div a {
+            color: black;
+            font-weight: bold;
+          }
+          .grid-container img {
+              display: inline-block;
+              width:80%;
+              border-radius: 5px;
+              
+          }
+          .grid-container p {
+              display: inline-block;
+              width:80%;
+              text-align: left;
+          }
+          .grid-container hr {
+              width: 50%;
+              font-weight: ;
+          }
+  
+          @media screen and (max-width: 900px) {
+              .grid-container {
+                  display: grid;
+                  grid-template-columns: 1fr;
+                  grid-gap: 10px;
+                }
+          }
     </style>
     
 </head>
@@ -81,7 +95,7 @@
     <ul class="social-icons" style="text-align: center;">
         <span>
             <div id="project">
-                <li><a class="projects" href="projects.html"><i class="fas fa-tasks"></i>Projects</a></li>
+                <li><a class="projects" href="projects.html"><i class="fas fa-tasks"></i><span class="projects">Projects</span></a></li>
             </div>
             <div>
                 <li><a class="facebook" href="https://www.facebook.com/profile.php?id=100073363057296"><i class="fab fa-facebook-square"></i></a></li>
@@ -111,129 +125,251 @@
 
 <!-- beam news -->
 
-<div style="text-align: center;">
+<div class="marketTickers">
     <h2 class="slogan">Coin Market Ticker List</h2>
     <coingecko-coin-market-ticker-list-widget  coin-id="bitcoin" currency="usd" locale="en" width="100%"></coingecko-coin-market-ticker-list-widget>
     <coingecko-beam-widget  type="all" height="300" locale="en"></coingecko-beam-widget>
 
-    <coingecko-coin-compare-chart-widget  coin-ids="bitcoin,eos,ethereum,litecoin,ripple,bnb-cash,nft-art-finance" currency="usd" locale="en" type="market_cap"></coingecko-coin-compare-chart-widget>
 </div>
 <!-- beam news ends -->
 
-    
-<h1 class="uppercase" style="text-align: center;" >CRYPTO NEWS UPDATES.</h1>
+<!-- news updates -->
+    <div>
+        <h2 class="uppercase" style="text-align: center;" >Recent News.</h2>
+    </div>
 
-<div class="grid-container">
-  <div>
-    <img src="pictures/news5.jpg" alt="raph's logo" >  
-    <h1>
-        U.S. Treasury's Nellie Liang says tech firms should not issue stablecoins.</h1>
-        Treasury Undersecretary for Domestic Finance Nellie Liang on Tuesday said technology firms should not issue stablecoins, or digital currencies 
-        that are pegged to sovereign currencies.
-        "We believe stablecoins as a payments instrument should not be issued by a technology firm," she told lawmakers during a virtual hearing regarding the President's 
-        Working Group on Financial Markets' 
-        report on stablecoins. This comes shortly after Meta Platforms' (NASDAQ:FB) Diem, a blockchain-based 
-        stablecoin payment system, sold its assets to crypto bank Silvergate Capital (NYSE:SI) for $182M at the end of January.
+
+    <div class="grid-container">
+
         
-        <p class="smallcaps">Feb. 08, 2022 11:13 AM ETTether USD (USDT-USD), USDC-USDFB, SIBy: Max Gottlich, SA News Editor9 Comments</p>
-  </div>
-  
-  <div>
-    <img src="pictures/raph3.jpg" alt="raph's logo">    
-    <h1>
-        Cryptocurrency lobbying expenditure doubles in 2021; Robinhood spends the most
-    </h1>
-  </div>
-  
-    <div>
-        <a href="https://seekingalpha.com/news/3797649-first-year-crypto-goes-all-in-on-super-bowl-advertising"><img src="pictures/news2.jpg" alt="raph's logo">    
-        <h1>
-            First year crypto goes all-in on Super Bowl advertising
-        </h1>
-            Feb. 09, 2022 4:26 AM ETCOIN, BUDBy: Yoel Minkoff, SA News Editor2 Comments</a>
-    </div>  
-
-    <div>
-        <a href="https://seekingalpha.com/news/3797449-paypal-forms-cryptocurrency-advisory-council-to-create-digital-financial-system">
-        <img src="pictures/news3.jpg" alt="raph's logo">    
-        <h1>
-            PayPal forms cryptocurrency advisory council to create digital financial system
-        </h1>
-        Feb. 08, 2022 3:11 PM ETPayPal Holdings, Inc. (PYPL)TWTRBy: Max Gottlich, SA News Editor20 Comments</a>
-    </div>
-
-    <div>
-        <img src="pictures/news4.jpg" alt="raph's logo">    
-        <h1>
-            DOJ arrests two for allegedly laundering $4.5B from crypto hack (updated)
-        </h1>
-            Feb. 08, 2022 12:10 PM ETBTC-USDBy: Liz Kiesche, SA News Editor28 Comments
-    </div>
-
-    <div>
-        <img src="pictures/news6.jpg" alt="raph's logo">    
-        <h1>
-            46.7 Million SHIB Burned in Over 24 Hours, While Burn Pot of This Company Rises to 191 Million Tokens</h1> 
-            Another large portion of Shiba Inu has been burnt, while an even bigger amount is going to be destroyed in four day
-         
-    </div>
+        <div>
+            <a href="https://seekingalpha.com/news/">      
     
-    <div>
-        <img src="pictures/news7.jpg" alt="raph's logo">
-        <h1>
-            The next NFT gaming revolution: Edensol’s Solana-based Metaverse
-        </h1>
-        Non-Fungible Tokens (NFTs) have become the go-to killer application for the gaming sector. The reason is simple: NFTs are a form of an asset whose...
-
-    </div>
-
-    <div>
-        <h1>
-            New Alfa Romeo SUV Will Come With NFT Service Record
-            Alfa Romeo claims its Tonale SUV is the first car to be sold with an NFT that tracks the vehicle's service history
-        </h1>
-        <img src="pictures/news8.jpg" alt="raph's logo">
-    </div>
-
-    <div>
-        <h1>
-            Ravendex: Cardano startup set for permissionless staking platform release
-        </h1>
-        <img src="pictures/news9.jpg" alt="raph's logo">
-    </div>
-
-    <div>
-        <h1>
-            Bitcoin mining infrastructure firm Compute North raises $385 million in equity and debt funding
-        </h1>
-            Compute North, a bitcoin mining infrastructure firm, has raised $385 million in equity and debt funding.
-
-        <img src="pictures/news10.jpg" alt="raph's logo">
-    </div>
-
-    <div>
-        <h1>
-            Wells Fargo Report Argues It&apos;s Not 'Too Late to Invest' in Crypto
-            Banking giant Wells Fargo said it&apos;s not too late to buy cryptocurrencies like Bitcoin, but investors still need to tread with caution.
-        </h1>
-        <img src="pictures/news11.jpg" alt="raph's logo">
-    </div>
-
-    <div>
-        <h1>
-            US Officials Seize $3.6B in Bitcoin From 2016 Bitfinex Hack
-            Nearly 120,000 BTC was stolen in the hack.
-        </h1>
-            ByDanny NelsonNikhilesh De
-            Feb 8, 2022 at 5:46 p.m.
+                <img src="pictures/raph11.jpg" alt="raph's logo" > 
+                <span>
+                    <p class="headline">
+                        The DeFi lock-up volume on the Terra chain is $14.36 billion.
+                    </p>
+                    <p class="time">
+                        ALTCOINS February 13, 2022
+                        <hr>
+                    </p>
+                </span> 
+            </a>
+        </div>
+        <div>
+            <a href="https://seekingalpha.com/news/">      
+    
+                <img src="pictures/news5.jpg" alt="raph's logo" > 
+                <span>
+                    <p class="headline">
+                        U.S. Treasury's Nellie Liang says tech firms should not issue stablecoins.
+                    </p>
+                    <p class="time">
+                        Feb. 09, 2022 4:26 AM.
+                        <hr>
+                    </p>
+                </span> 
+            </a>
+        </div>
         
-        <img src="pictures/news12.jpg" alt="raph's logo">
-    </div>
+        <div>
+            <a href="https://seekingalpha.com/news/">      
 
-
+                <img src="pictures/raph3.jpg" alt="raph's logo">
+                <span>
+                    <p class="headline"> 
+                        Cryptocurrency lobbying expenditure doubles in 2021; Robinhood spends the most
+                    </p>
+                    
+                    <p class="time">
+                        Feb. 09, 2022 4:26 AM.
+                        <hr>
+                    </p>
+                </span>
+            </a>
+        </div>
     
-</div>
+        <div>
+            <a href="https://seekingalpha.com/news/3797649-first-year-crypto-goes-all-in-on-super-bowl-advertising">
+                <img src="pictures/news2.jpg" alt="raph's logo">    
+                <span>
+                    <p class="headline">
+                        First year crypto goes all-in on Super Bowl advertising.
+                    </p>
+                    <p>
+                        Feb. 09, 2022 4:26 AM.
+                        <hr>
+                    </p>
+                </span>
+                
+            </a>
+        </div>  
 
+        <div>
+            <a href="https://seekingalpha.com/news/3797449-paypal-forms-cryptocurrency-advisory-council-to-create-digital-financial-system">
+                <img src="pictures/news3.jpg" alt="raph's logo">   
+                <span>
+                    <p class="headline">
+                        PayPal forms cryptocurrency advisory council to create digital financial system
+                        
+                        
+                    </p>
+
+                    <p class="time">
+                        Feb. 08, 2022 3:11 PM.
+                        <hr>
+                    </p>
+                </span> 
+                
+            </a>
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/">      
+                <img src="pictures/news4.jpg" alt="raph's logo">
+                <span>
+                    <p  class="headline">
+                        DOJ arrests two for allegedly laundering $4.5B from crypto hack (updated)
+                
+                        
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>   
+                
+            </a>
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/">
+                <img src="pictures/news6.jpg" alt="raph's logo">    
+                <span>
+                    <p class="headline">
+                        46.7 Million SHIB Burned in Over 24 Hours, While Burn Pot of This Company Rises to 191 Million Tokens. 
+                        
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>
+                
+            </a>
+        </div>
+        
+        <div>
+            <a href="https://seekingalpha.com/news/">  
+                <span>
+                    <img src="pictures/news7.jpg" alt="raph's logo">
+                    <p class="headline">
+                        The next NFT gaming revolution: Edensol’s Solana-based Metaverse.
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>    
+            </a>
+                
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/"> 
+                <img src="pictures/news8.jpg" alt="raph's logo"> 
+                <span>
+                    <p class="headline">
+                        New Alfa Romeo SUV Will Come With NFT Service Record.
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>    
+
+               
+                
+            </a>
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/">      
+
+                <img src="pictures/news9.jpg" alt="raph's logo">
+                <span>
+                    <p class="headline">
+                        Ravendex: Cardano startup set for permissionless staking platform release.
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>
+                
+            </a>
+        </div>
+
+        <div>
+
+            <a href="https://seekingalpha.com/news/">      
+                <span>
+                    <img src="pictures/news10.jpg" alt="raph's logo">
+
+                    <p class="headline">
+                        Bitcoin mining infrastructure firm Compute North raises $385 million in equity and debt funding.
+                
+                    </p>
+                    <p class="time">
+                        Feb. 08, 2022 12:10 PM.
+                        <hr>
+                    </p>
+                </span>
+                
+            </a>
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/">      
+                <span>
+                    <img src="pictures/news11.jpg" alt="raph's logo">
+
+                <p class="headline">
+                    Wells Fargo Report Argues It&apos;s Not 'Too Late to Invest' in Crypto.
+                </p>
+                <p class="time">
+                    Feb. 08, 2022 12:10 PM.
+                    <hr>
+                </p>
+                </span>
+                
+            </a>
+        </div>
+
+        <div>
+            <a href="https://seekingalpha.com/news/">      
+                <span>
+                    <img src="pictures/news12.jpg" alt="raph's logo">
+                    <p class="headline">
+                        US Officials Seize $3.6B in Bitcoin From 2016 Bitfinex Hack
+                        Nearly 120,000 BTC was stolen in the hack.
+                        
+                    </p>
+                    <p class="time">
+                        Feb 8, 2022 at 5:46 p.m.
+                        <hr>
+                    </p>
+                </span>
+                
+            </a>
+            
+        </div>
+
+
+        
+    </div>
+    <!-- news updates ends-->
 
 <!-- news articles -->
     <div  id="output">
@@ -314,8 +450,7 @@
 </body>
 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinMarquee.js"></script>
 <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script>
-<script src="https://widgets.coingecko.com/coingecko-coin-compare-chart-widget.js"></script>
-<script src="https://widgets.coingecko.com/coingecko-coin-converter-widget.js"></script>
+<script src="https://widgets.coingecko.com/coingecko-coin-market-ticker-list-widget.js"></script>
 <script src="https://widgets.coingecko.com/coingecko-beam-widget.js"></script>
 <script src="index.js"></script>
 
