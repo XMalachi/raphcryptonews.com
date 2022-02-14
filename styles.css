@@ -208,11 +208,41 @@ a {
   text-decoration: none;
 }
 
-
+.blogPosts {
+  background-color: black;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+}
+.blogPost a {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  height: 170px;
+}
+.blogHeadline {
+  padding: 30px;
+  height: 100%;
+  text-align: left;
+}
+.blogImage {
+  height: 100%;
+}
 /* responsiveness */
 
 @media screen and (max-width: 900px) {
-  
+
+  .blogPosts {
+    grid-template-columns: 1fr;
+  }
+  .blogPost a {
+    width: 100%;
+  }
+  .blogImage {
+    width: 20%;
+  }
   .logo {
     height: 90px;
     width: 250px;
