@@ -188,7 +188,7 @@ html {
   text-align: left;
   font-weight: 700;
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
  
 
   .form {
@@ -208,46 +208,63 @@ a {
   text-decoration: none;
 }
 
+
 .blogPosts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: black;
-  padding: 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
+  padding: 40px 10px;
+  color: white;
 }
-.blogPost a {
+.blogPost {
+  margin: 30px;
+}
+.blogPost > a {
   color: white;
   display: flex;
-  flex-direction: row;
-  margin: 30px;
-  height: 170px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  
 }
-.blogHeadline {
-  padding: 30px;
-  height: 100%;
-  text-align: left;
-}
-.blogImage {
-  height: 100%;
-}
-/* responsiveness */
+.blogPost > a:hover {
+  color: wheat;
+  font-size: 1.03em;
+  transition: 0.5s;
 
+}
+
+.blogHeadline {
+  font-size: 0.8em;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+@media screen and (min-width: 500px) {
+  .blogPosts {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 80px 30px;
+    
+  }
+}
 @media screen and (max-width: 900px) {
 
-  .blogPosts {
+  /* .blogPosts {
     grid-template-columns: 1fr;
   }
   .blogPost a {
     width: 100%;
-  }
-  .blogImage {
+  } */
+  /* .blogImage {
     width: 20%;
-  }
+  } */
   .logo {
     height: 90px;
     width: 250px;
     margin-left: -30px;
-    float: left;
+    float: lef
+    t;
     margin-top: -100px;
   }
 
@@ -498,3 +515,4 @@ a {
     margin: -80px 30px 50px 30px;
   }
 }
+
