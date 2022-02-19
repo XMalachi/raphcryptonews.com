@@ -512,3 +512,23 @@ a {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .blogPost {
+    margin: 0px;
+    padding: 30px 10px;
+  }
+  .blogImage {
+   width: 20%; 
+  }
+  .blogImage > img {
+    width: 100%; 
+   }
+  .blogHeadline {
+    width: 80%;
+    padding: 0;
+    margin-left: 5px;
+
+  }
+}
+
+
